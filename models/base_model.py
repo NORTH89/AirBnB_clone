@@ -18,7 +18,7 @@ class BaseModel:
     """
 
     def __init__(self, *args, **kwargs):
-        """initialization"""
+        """initialization of the BaseModel class"""
         self.id = self._generate_id()
         self.created_at = self.updated_at = self._get_curr_time()
 
