@@ -6,7 +6,9 @@
 
 Welcome to the AirBnB clone project! This project aims to build a command-line interface (CLI) for managing AirBnB objects. It is the first step towards building a full web application.
 
+
 ## Project Objectives
+
 
 The main objectives of this project are:
 
