@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+BaseModel class defines all common attributes/methods
+for other classes used in AirBnB_clone project
+"""
+import uuid
 from uuid import uuid4
 from datetime import datetime
 
