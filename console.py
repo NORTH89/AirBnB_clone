@@ -133,7 +133,9 @@ class HBNBCommand(cmd.Cmd):
     def print_all_instances_by_class(self, instances, class_name):
         """Prints the string representation of instances of
         a specific class"""
-        print([str(obj) for obj in instances if obj.__class__.__name__ == class_name])
+        print(
+            [str(obj) for obj in instances if obj.__class__.__name__ == class_name],
+        ),
 
     def print_instance(self, obj_dict, key):
         """
@@ -182,7 +184,11 @@ class HBNBCommand(cmd.Cmd):
                 if len(args) == 0:
                     full_command = "{} {}".format(command, class_name)
                 elif len(args) == 1:
-                    full_command = "{} {} {}".format(command, class_name, args[0])
+                    full_command = "{} {} {}".format(
+                        command,
+                        class_name,
+                        args[0],
+                    )
                 elif len(args) == 3:
                     full_command = "{} {} {} {} {}".format(
                         command, class_name, args[0], args[1], args[2]
